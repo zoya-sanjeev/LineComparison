@@ -16,11 +16,14 @@ public class LineComparison {
 		
 		String l1=Long.toString(Math.round(Math.sqrt(Math.pow(x2-x1, 2)+ Math.pow(y2-y1, 2))));
 		String l2=Long.toString(Math.round(Math.sqrt(Math.pow(a2-a1, 2)+ Math.pow(b2-b1, 2))));
-		if(l1.equals(l2)) {
-			System.out.println("The Lines are equal");
+		int compare= l1.compareTo(l2);
+		if(compare>0) {
+			System.out.println("line 1 is greater than line 2");
 		}
+		else if(compare<0) 
+			System.out.println("line 2 is greater than line 1");
 		else
-				System.out.println("The Lines are not equal");
+			System.out.println("line 1 is equal to line 2");
 
 	}
 
