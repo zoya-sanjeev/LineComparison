@@ -26,8 +26,8 @@ public class LineComparison {
 		Line line2=new Line(point3,point4);
 		
 		CompareLengthsInterface lengthComparison = new CompareLengthsImplementation();
-		lengthComparison.equalityOfLines(LengthOfline1,LengthOfline2);
-		lengthComparison.compareLines(LengthOfline1,LengthOfline2);
+		lengthComparison.equalityOfLines(line1,line2);
+		lengthComparison.compareLines(line1,line2);
 		
 		
 	}
