@@ -10,9 +10,9 @@ public class Line {
 		this.endPoint=end;
 	}
 	
-	double getLengthOfLine(Point startPoint,Point endPoint) {
+	double getLengthOfLine() {
 		
-		double lengthOfLine= Math.sqrt(Math.pow(endPoint.getxCoordinate() -startPoint.getxCoordinate(), 2)+ Math.pow(endPoint.getyCoordinate() -startPoint.getyCoordinate(), 2));
+		double lengthOfLine= Math.sqrt(Math.pow(this.endPoint.getxCoordinate() -this.startPoint.getxCoordinate(), 2)+ Math.pow(this.endPoint.getyCoordinate() -this.startPoint.getyCoordinate(), 2));
 		return lengthOfLine ;
 		
 	}
