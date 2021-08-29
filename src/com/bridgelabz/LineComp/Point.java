@@ -8,10 +8,7 @@ public class Point {
 	
 	static Scanner sc=new Scanner(System.in);
 	
-	Point(){
-		System.out.println("Enter X and Y coordinates of point");
-		double xCoordinate=sc.nextDouble();
-		double yCoordinate=sc.nextDouble();
+	Point(double xCoordinate, double yCoordinate){
 		this.xCoordinate=xCoordinate;
 		this.yCoordinate=yCoordinate;
 	}
@@ -32,11 +29,5 @@ public class Point {
 		this.yCoordinate = yCoordinate;
 	}
  
-	
-	public double getLengthOfLine( Point endPoint) {
-		double lengthOfLine= Math.sqrt(Math.pow(endPoint.getxCoordinate() -this.getxCoordinate(), 2)+ Math.pow(endPoint.getyCoordinate() -this.getyCoordinate(), 2));
-		return lengthOfLine ;
-		
-	}
 
 }
